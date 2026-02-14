@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frogger Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="hud">
+      <h1>Frogger</h1>
+      <div class="stats">
+        <span id="hud-score">Score: 0</span>
+        <span id="hud-level">Level: 1</span>
+        <span id="hud-lives">Lives: 3</span>
+        <span id="hud-state">Ready</span>
+      </div>
+      <p class="hint">Move: Arrow Keys / WASD · Pause: P or Esc · Restart: R</p>
+    </header>
+
+    <div class="canvas-shell">
+      <canvas id="game" width="845" height="975" aria-label="Frogger game board"></canvas>
+      <div id="start-overlay" class="start-overlay" role="dialog" aria-modal="true" aria-label="Start Frogger">
+        <div class="start-card">
+          <h2>Ready to Hop?</h2>
+          <p>Download, open, and press Play. No install needed.</p>
+          <button id="play-btn" type="button">▶ Play</button>
+          <small>Tip: You can also press <strong>Enter</strong> to start.</small>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
